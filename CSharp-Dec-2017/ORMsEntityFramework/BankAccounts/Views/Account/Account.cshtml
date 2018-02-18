@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model BankAccounts.Models.User
+
+<h1>Welcome @Model.FirstName</h1>
+<a asp-controller="Home" asp-action="Logout">Logout</a>
+<h3>Current balance: $@Model.Balance.ToString("F2")</h3>
+
+
+<form method="post" asp-controller="Account" asp-action="transaction">
+    <div class="form-group">
+        <label for="transaction">Deposit/Withdraw</label>
+        <select class="form-control" name="transaction">
+            @for(var i = 5; i >= -5; i--)
+            {
+                @if(i == 0)
+                {
+                    <option value=0 selected>-</option>
+                }
+                else
+                {
+                    <option value=@i>@i</option>
+                }
+            }
+        </select>
+    </div>
+    @{
+        if(TempData["Error"] != null)
+        {
+            <p>@TempData["Error"]</p>
+        }
+    }
+    <input type="submit" value="Submit">
+</form>
+
+<table>
+    <thead>
+        <th>Amount</th><th>Date</th>
+    </thead>
+    <tbody>
+        @foreach(var transaction in @Model.Transactions)
+        {
+            <tr>
+                <td>$@transaction.Amount.ToString("F2")</td>
+                <td>@transaction.CreatedAt.ToString("MMM dd yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

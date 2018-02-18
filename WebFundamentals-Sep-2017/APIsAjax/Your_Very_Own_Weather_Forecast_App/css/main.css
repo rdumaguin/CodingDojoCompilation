@@ -1,0 +1,33 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: arial,sans-serif;
+ /*color: black;*/
+ /*border: 1px dotted red;*/
+}
+#wrapper{
+  width: 960px;
+  height: 960px;
+  padding: 50px;
+  background-color: white;
+}
+form{
+  padding: 25px;
+}
+#location{
+  display: inline-block;
+}
+#temperature{
+  width: 225px;
+  height: 100px;
+  display: inline;
+  vertical-align: top;
+  text-align: center;
+  padding: 10px;
+}
+h4{
+  display: inline-block;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}

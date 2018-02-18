@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rommel's Awesome Fake Blog</title>
+    <meta name="description" content="Coding Dojo 'star student', Rommel Dumaguin, documents his experience with the popular online bootcamp. Well, the first few days at least..">
+  </head>
+  <body>
+    <font face="arial"> <!--"Obsolete. Use CSS instead"-->
+    <h1>Rommel's Coding Dojo Experience</h1>
+    <div id="bio">
+      <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAgRAAAAJDY4MzZmOTg4LTUyOTgtNGRjMi1iZDE3LTE4NGNhMTU3NDQ1NQ.jpg" alt="bio_picture">
+      <h3>Bio</h3>
+      <p>Bacon goes with everything! Even code ~ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin, odio sed aliquet condimentum, purus enim porttitor odio, nec ultrices neque velit eget ipsum. Pellentesque varius massa nunc, vel aliquet justo vestibulum et. Sed finibus eleifend ligula condimentum rhoncus. Aliquam tempus sapien in nisi elementum, quis commodo urna lacinia. Ut sit amet magna scelerisque, condimentum velit in, gravida nisl. In hac habitasse platea dictumst. Donec vel sagittis leo, sit amet placerat quam. Phasellus nec lorem euismod nulla consectetur accumsan. Etiam vel lacinia dolor. Mauris posuere neque risus, non sollicitudin sem egestas vel. Quisque aliquam accumsan leo. Fusce a elit risus. Nunc volutpat, tellus non cursus commodo, mi lorem elementum velit, nec vestibulum dui nisi eget est. Praesent consequat cursus consequat.</p>
+    </div>
+    <div id="go">
+      <h3>Go, go, go!</h3>
+      <table border = "1"> <!--"The border attribute on the table element is presentational markup. Consider using CSS instead."-->
+        <thead>
+          <tr>
+            <th align="right">Day</th> <!--The align attribute is obsolete. Use CSS instead.-->
+            <th align="left">Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="right">-1</td>
+            <td align="left">Labor Day.. The day before the fun began! I was able to get a lot of the work (pc setup, reading, assignments, algorithm challenges, etc.) done ahead of time. Actually I finished the algorithm lessons, challenges, and assessment before today. If I'm not ahead, I'm behind!</td>
+          </tr>
+          <tr>
+            <td align="right">0</td>
+            <td align="left">The sun was red due to the Eagle Creek wildfires. We had our first online orientation and lecture. Everybody was extremely friendly. Instructor seemed to know what he's talking about. Great start to "Web Fundamental Online"</td>
+          </tr>
+          <tr>
+            <td align="right">1</td>
+            <td align="left">It's 9pm, and I'm still working on the beginning of my fake blog.. Moving on!</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="https://goo.gl/NcH5mh" target="_blank">Watch this short clip of my experience so far!</a></p>
+    </div>
+    <div id="discussion">
+      <h3>Discussions (Access required)</h3>
+      <ul>
+        <li>
+          <a href="https://learn.codingdojo.com/d/12/6/465" target="_blank">Tuesday - What is git and what problem does it solve?</a>
+        </li>
+        <li>
+          <a href="https://learn.codingdojo.com/d/12/6/491" target="_blank">Wednesday - What is HTML?</a>
+        </li>
+      </ul>
+    </div>
+    <div id="survey">
+      <h3>Please take this short survey!</h3>
+      <form action="process.php" method="post">
+        <p>What's your favorite programming language?
+          <select name="favorite_language">
+              <option value="javascript">Javascript</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="python">Python</option>
+              <option value="c#">C#</option>
+              <option value="c">C</option>
+              <option value="c++">C++</option>
+              <option value="none">None</option>
+          </select><br>
+        </p>
+
+        <p>Do you think that I spent too much time on this?</p>
+        <input type="radio" id="yes" name="too_much_time" value="yes">
+        <label for="yes">Probably!</label>
+        <input type="radio" id="no" name="too_much_time" value="no">
+        <label for="no">Not enough!</label>
+        <input type="radio" id="no_comment" name="too_much_time" value="no_comment">
+        <label for="no_comment">No comment..</label><br>
+
+        <h4>Additional comments?</h4>
+        <textarea name="comments" style="width:500px; height:100px;"></textarea>
+        <p>Leave an email if you would like a daily update of my awesome (hopefully) experience at Coding Dojo!</p>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    </font>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Your Very Own Weather Forecast App!</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    "use strict";
+
+      $(document).ready(function(){
+        // console.log($())
+        // alert("jQuery is set!");
+
+        for (var i = 1; i < 152; i++){
+          $('div#PokemonList').append(`<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png" + " alt="Pokemon/${i}" id="${i}"">`);
+            // alert('test')
+            // console.log();
+          }
+        })
+
+        $(document).on('click', 'img', function(){
+          $('#PokemonData').empty();
+          var clickedPokemonID = $(this).attr('id');
+
+          $.get(`https://pokeapi.co/api/v1/pokemon/${clickedPokemonID}/`, function(res) {
+              console.log(res);
+              // console.log(res.name);
+              // console.log(res.height);
+              // console.log(res.weight);
+              $('#PokemonData').append("<h1>" + res.name + "</h1>")
+              $('#PokemonData').append(`<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${clickedPokemonID}.png" + " alt="Pokemon/${clickedPokemonID}">`)
+              $('#PokemonData').append("<h4>Types: </h4>")
+              for(var i = 0; i < res.types.length; i++) {
+              // console.log(res.types[i].name);
+              $('#PokemonData').append("<ul><li>" + res.types[i].name + "</li></ul>")
+              }
+              $('#PokemonData').append("<h4>Height: </h4>")
+              $('#PokemonData').append("<ul><li>" + res.height + "</li></ul>")
+              $('#PokemonData').append("<h4>Weight: </h4>")
+              $('#PokemonData').append("<ul><li>" + res.weight + "</li></ul>")
+          }, "json");
+
+      }); // end of $(document).ready(function(){
+    </script>
+  </head>
+  <body>
+
+    <div id="PokemonList"></div>
+    <div id="PokemonData"></div>
+
+    </div>
+  </body>
+  <!-- Your Very Own Weather Forecast App! -->
+</html>

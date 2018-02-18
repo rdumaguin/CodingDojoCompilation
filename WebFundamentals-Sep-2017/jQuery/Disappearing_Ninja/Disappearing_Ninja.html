@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Disappearing Ninja</title>
+      <link rel="stylesheet" type="text/css" href="./css/main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      "use strict";
+
+        $(document).ready(function(){
+
+          $('button').click(function(){
+            $('img').fadeIn( 5000 );
+          });
+
+          $('img').click(function(){
+            $(this).fadeOut( 1000 );
+          });
+
+        }) // end of $(document).ready(function(){
+      </script>
+
+   </head>
+   <body>
+     <div id="wrapper">
+         <div class="ninjas">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+           <img src="./images/ninja.jpg" alt="ninja.jpg">
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="fadeIn">FadeIn</button>
+           <div class="interaction fadeIn">
+             <h1>.fadeIn</h1>
+             <p>Click the button to reveal the hidden ninjas.</p>.
+           </div>
+         </div>
+    </div> <!-- end of wrapper -->
+    <!-- Create a simple HTML page with 8 images of equal width and height (you can use any image you like). When a particular image is clicked, have that image disappear. Also, include a button on the bottom of the page called 'Restore'. When the button is clicked, all images will appear. -->
+   </body>
+</html>

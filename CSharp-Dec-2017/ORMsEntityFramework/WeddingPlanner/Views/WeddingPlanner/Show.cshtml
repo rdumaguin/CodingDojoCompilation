@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model WeddingPlanner.Models.ShowWedding
+
+<h1> @Model.Wedding.WedderOne and @Model.Wedding.WedderTwo's Wedding</h1>
+<a asp-controller="WeddingPlanner" asp-action="Index">Dashboard</a>
+<a asp-controller="Home" asp-action="Logout">Logout</a>
+
+<h2>Date: @Model.Wedding.Date?.ToString("D")</h2>
+<h2>Guests:</h2>
+
+@foreach(var RSVP in @Model.Wedding.RSVPdGuests)
+{
+    <h3>@RSVP.Guest.FirstName @RSVP.Guest.LastName</h3>
+}

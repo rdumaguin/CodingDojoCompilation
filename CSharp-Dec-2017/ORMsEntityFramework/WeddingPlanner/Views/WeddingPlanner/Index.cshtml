@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model WeddingPlanner.Models.WeddingPlannerIndex
+@using System.Linq;
+
+<h1>Welcome to the Wedding Planner</h1>
+<a asp-controller="Home" asp-action="Logout">Logout</a>
+
+@*
+@foreach(var user in Model.WeddingsPlanned)
+{
+    <p><a href="user/@user.UserId">@user.FirstName @user.LastName</a></p>
+}
+*@
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Wedding</th><th>Date</th><th>Guest</th><th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var wedding in Model.Weddings)
+        {
+            <tr>
+                <td><a href="/wedding/show/@wedding.WeddingId">@wedding.WedderOne & @wedding.WedderTwo</a></td>
+                <td>@wedding.Date?.ToString("D")</td> <!--Catching null value in the Model, Index, and CustomValidations-->
+                <td>@wedding.RSVPdGuests.Count()</td>
+                    @if(wedding.UserId == ViewBag.ActiveUser.UserId)
+                    {
+                        // <td><a href="/wedding/delete/@wedding.WeddingId">Delete</a></td>
+                        <td><a asp-controller="WeddingPlanner" asp-action="Delete" asp-route-id=@wedding.WeddingId>Delete</a></td>
+                    }
+                    else if(wedding.RSVPdGuests.SingleOrDefault(u => u.UserId == ViewBag.ActiveUser.UserId) != null)
+                    {
+                        <td><a asp-controller="WeddingPlanner" asp-action="UnRsvp" asp-route-id=@wedding.WeddingId>Un-RSVP</a></td>
+                    }
+                    else
+                    {
+                        <td><a asp-controller="WeddingPlanner" asp-action="Rsvp" asp-route-id=@wedding.WeddingId>RSVP</a></td>
+                    }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button><a href="/wedding/new">New Wedding</a></button>

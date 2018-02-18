@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <form action="process.php" method="post">
+            <h1>My Registration Form</h1>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name"><br /><br />
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br /><br />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br /><br />
+
+            <label for="pw_confirm">PW Confirm:</label>
+            <input type="password" id="pw_confirm" name="pw_confirm"><br /><br />
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br /><br />
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="Other" name="gender" value="other">
+            <label for="Other">Other</label>
+
+            <p>A short description about yourself:</p>
+            <textarea name="description"></textarea>
+
+            <p>Favorite Language:</p>
+            <select name="favorite_language">
+                <option value="javascript">Javascript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+            </select><br /><br />
+
+            <input type="submit" value="Submit">
+          </form>
+    </body>
+</html>

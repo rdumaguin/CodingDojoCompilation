@@ -1,0 +1,16 @@
+@using RESTauranter.Models
+@model List<Review>
+@{
+    ViewData["Title"] = "Reviews";
+}
+
+<a href="/">Go back</a>
+@foreach(var review in Model)
+{
+    string star = review.rating > 1 ? "stars" : "star";
+    
+    <h3>Review for: @review.restaurant <span>@review.rating @star</span></h3>
+    <h4>Reviewer: @review.reviewer, @review.date_visited.ToString("D")</h4>
+    <p>@review.content</p>
+    <hr>
+}

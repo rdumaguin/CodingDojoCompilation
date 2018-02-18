@@ -1,0 +1,8 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model WeddingPlanner.Models.User
+
+<h1>Cool page for @Model.FirstName</h1>
+<h2><strong>Email:</strong> @Model.Email</h2>
+<h2><strong>Created At:</strong> @Model.CreatedAt.ToString("D")</h2>

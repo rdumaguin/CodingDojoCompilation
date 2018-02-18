@@ -1,0 +1,34 @@
+ Open Terminal
+
+ Navigate to your Desktop 
+cd users\Rom\Desktop
+
+ Create a new directory, call it 'test' 
+md test
+
+ Make files called index.html, styles.css, commands.txt inside the test directory 
+cd test
+copy NUL index.html
+copy NUL styles.css
+copy NUL commands.txt
+
+Make a copy of index.html and call it index_2.html
+copy index.html index_2.html
+
+ In the 'test' directory, remove the 'styles.css' file
+del styles.css
+
+ Navigate back to your desktop and make another directory, call it 'destination'
+cd..
+md destination
+
+ Move the index_2.html file from 'test' to the 'destination' directory
+move test\index_2.html destination\index_2.html
+
+ Now, check and see what files are in the 'test' and 'destination' directories
+dir test
+dir destination
+
+ Delete the 'destination' directory
+rd /s destination
+y

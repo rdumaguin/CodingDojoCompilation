@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    "use strict";
+
+      $(document).ready(function(){
+        // console.log($())
+        // alert("jQuery is set!");
+
+        $('form').submit(function(){
+          // var firstName = $('#first_name').val();
+          // var lastName = $('#last_name').val();
+          // var email = $('#email').val();
+          // var contact = $('#contact').val();
+          $('#myTable').append('<tr><td>' + $('#first_name').val() + '</td><td>' + $('#last_name').val() + '</td><td>' + $('#email').val() + '</td><td>' + $('#contact').val() + '</td></tr>');
+          this.reset();
+          return false;
+        });
+
+      }) // end of $(document).ready(function(){
+    </script>
+  </head>
+<body>
+  <table id="myTable">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
+      <th>Contact #</th>
+    </tr>
+  </table>
+
+  <form action="process.php" method="post">
+
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name"><br /><br />
+
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name"><br /><br />
+
+      <label for="email">Email Address:</label>
+      <input type="text" id="email" name="email"><br /><br />
+
+      <label for="contact">Contact No:</label>
+      <input type="text" id="contact" name="contact"><br /><br />
+
+      <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

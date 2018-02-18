@@ -1,0 +1,197 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: arial;
+ font-weight: 400;
+}
+.nav_links a{
+  color: white;
+}
+p{
+  font-size: 12px;
+}
+h4{
+  color: white;
+}
+#wrapper{
+  width: 960px;
+  background-color: #245176;
+}
+.white{
+  color: white;
+  font-size: 14px;
+}
+p.gold{
+  color: gold;
+  font-size: 17px;
+  font-style: italic;
+  padding: 5px 0;
+}
+.header{
+  height: 125px;
+}
+.header img{
+  width: 350px;
+  padding: 15px 0 15px 20px;
+  margin-right: 305px;
+}
+.search_text_options{
+width: 250px;
+display: inline-block;
+vertical-align: top;
+margin-top: 10px;
+}
+.text_size{
+  text-align: center;
+  padding: 0 0 5px 75px;
+}
+.text_size p,
+.text_size a{
+  display: inline;
+}
+.text_size a{
+color: #c3a909;
+font-size: 12px;
+}
+.search{
+  width: 230px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #444444;
+  box-shadow: 1px 1px 5px black;
+  padding: 0 0 5px 40px;
+}
+.search form input.search_box{
+  height: 27px;
+  width: 140px;
+  border-style:inset;
+  border-radius: 1px;
+  text-align: center;
+}
+.search form input.go{
+  font-size: 12px;
+  width: 40px;
+  height: 30px;
+  margin: 15px 5px;
+  background-color: #245176;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 10px;
+  box-shadow: 1px 1px 5px black;
+}
+.body{
+height: 500px;
+background-color: #245176;
+}
+.main_content_top{
+  height: 300px;
+  width: 100%;
+  border-bottom: 3px solid #183853;
+}
+.navbar{
+  width: 825px;
+  background-color: #3b78ad;
+  border-radius: 5px;
+  text-align: center;
+  padding: 9px 0;
+  margin-left: 100px;
+  box-shadow: 1px 1px 5px black;
+  background: #487fac; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#3576ad,#487fac,#3576ad); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#3576ad,#487fac,#3576ad); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#3576ad,#487fac,#3576ad); /* For Firefox 3.6 to 15 */
+  background-image: linear-gradient(#3576ad,#487fac,#3576ad);
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 5px;
+}
+.nav_links{
+  width: 300px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.nav_links ul{
+  padding: 5px 0 5px 50px;
+  list-style-position: inside; /*Combined with "text-align: center; for centering bullets*/
+  text-align: center;
+  color: yellow;
+}
+.nav_links ul li{
+  padding: 5px 0 5px 0px;
+}
+.main_content_top_text{
+  width: 600px;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.main_content_top_text h4{
+  margin-top: 10px;
+}
+.canvas{
+  background-color: #73a7d5;
+  width: 90%;
+  height: 3px;
+}
+.main_content_bottom{
+  text-align: center;
+  background-color: white;
+}
+.getting_started_text{
+  vertical-align: top;
+  width: 400px;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+ul.getting_started_links{
+  width: 275px;
+  margin-left: 70px;
+  list-style: square;
+}
+.getting_started_links a{
+  color: #84b2da;
+}
+a.PyPI{
+  color: #84b2da;
+}
+.getting_started_text ul li{
+  text-align: center;
+  padding: 2px 0 2px 10px;
+  font-size: 12px;
+  width: 200px;
+}
+.getting_started_text h3,
+.getting_started_text p{
+  width: 250px;
+  margin-left: 40px;
+}
+.footer{
+width: 100%;
+background-color: darkblue;
+text-align: center;
+background: #2c6392; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#245176,#3374ac); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#245176,#3374ac); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#245176,#3374ac); /* For Firefox 3.6 to 15 */
+background-image: linear-gradient(#245176,#3374ac);
+padding: 40px 0 5px;
+color: #84b2da;
+}
+.footer a{
+  color: #84b2da;
+  text-decoration: none;
+}
+.footer ul li,
+.navbar ul li{
+  display: inline;
+  padding: 0 20px;
+}
+.footer p{
+  color: #84b2da;
+  font-size: 10px;
+  margin-top: 15px;
+}

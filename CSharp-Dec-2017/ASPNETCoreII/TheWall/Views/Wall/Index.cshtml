@@ -1,0 +1,49 @@
+@model Wall.Models.WallBundle
+
+@{
+    ViewData["Title"] = "TheWall - Dashboard";
+}
+
+<a href="logout">log off</a>
+<div asp-validation-summary="All" class="flash_error"></div>
+<h5>Welcome @ViewBag.User["first_name"]</h5>
+
+<form asp-action="message" asp-controller="Wall" method="post">
+    <h4>Post a message</h4>
+    <div class="form-group post_message">
+        <!-- <span asp-validation-for="Message.Content"></span> -->
+        <textarea asp-for="Message.Content" class="form-control"></textarea>
+        <input type="submit" value="Post a message" class="button">
+    </div>
+</form>
+@foreach (var message in ViewBag.Messages)
+{
+    <h3>@message["first_name"]</h3>
+    <div class="message">
+        <p>@message["first_name"] @message["last_name"] - @message["created_at"].ToString("MMMM d yyyy")</p>
+        <p>@message["content"]</p>
+    </div>
+
+    @foreach(var comment in ViewBag.Comments)
+    {
+        if(comment["message_id"] == message["id"])
+        {
+            <div class="comment">
+                <p>@comment["first_name"] @comment["last_name"] - @comment["created_at"].ToString("MMM d yyyy")</p>
+                <p>@comment["content"]</p>
+            </div>
+        }
+    }
+
+    <form asp-action="comment" asp-controller="Wall" method="post">
+        <h4>Post a Comment</h4>
+        <div class="form-group post_comment">
+            <!-- <span asp-validation-for="Comment.Content"></span> -->
+            <textarea asp-for="Comment.Content" class="form-control"></textarea>
+            <input type="hidden" asp-for="Comment.MessageId" value="@message["id"]">
+            <input type="submit" value="Post a comment" class="button">
+        </div>
+    </form>
+
+}
+

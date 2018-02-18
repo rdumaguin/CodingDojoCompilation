@@ -1,0 +1,10 @@
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\bin\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.deps.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\bin\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.runtimeconfig.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\bin\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.runtimeconfig.dev.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\bin\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\bin\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.pdb
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\obj\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.csproj.CoreCompileInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\obj\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.AssemblyInfoInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\obj\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.AssemblyInfo.cs
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\obj\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Simple_CRUD_with_MySQL\obj\Debug\netcoreapp2.0\Simple_CRUD_with_MySQL.pdb

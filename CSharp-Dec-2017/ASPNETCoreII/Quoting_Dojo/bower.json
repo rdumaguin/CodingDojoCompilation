@@ -1,0 +1,8 @@
+{
+  "name": "Quoting_Dojo",
+  "private": true,
+  "dependencies": {
+    "bootstrap" : "3.3.6"
+    
+  }
+}

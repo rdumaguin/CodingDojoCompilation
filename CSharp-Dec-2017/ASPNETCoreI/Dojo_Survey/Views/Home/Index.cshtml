@@ -1,0 +1,28 @@
+﻿<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Index</title>
+    </head>
+    <body>
+            <form action='/result' method='post'>
+                <p>Your Name:<input type='text' name='name'></p>
+                <p>Dojo Location:
+                <select name="dojo_location">
+                    <option value="Online">Online</option>
+                    <option value="Bellevue">Bellevue</option>
+                    <option value="Other">Other</option>
+                </select></p>
+                <p>Favorite Language:
+                <select name="favorite_language">
+                    <option value="Javascript">Javascript</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                </select></p>
+                <p>Comment (optional):</p>
+                <textarea name="comment" rows="5" cols="50"></textarea>
+                <input type='submit' value='Submit' class="submit">
+            </form>
+    </body>
+</html>

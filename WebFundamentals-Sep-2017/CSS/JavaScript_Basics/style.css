@@ -1,0 +1,67 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+ color: #bfd7ea;
+ font-size: 15px;
+}
+a {
+  color: #52dee5;
+  font-weight: bold;
+}
+li {
+  margin-left: 15px;
+}
+li ul li{
+  margin-left: 15px;
+}
+#wrapper{
+ width: 970px;
+ background-color: #12355b;
+ margin: 0px auto;
+ padding: 10px;
+}
+#wrapper div{
+  border-radius: 15px;
+}
+#header{
+ font-size: 30px;
+ font-weight:bold;
+ background-color: #d72638;
+ margin-bottom: 15px;
+ padding: 15px 0px 15px 15px;
+}
+#navigation{
+ width: 180px;
+ margin-right: 15px;
+ padding: 15px;
+ background-color: #087e8b;
+ display: inline-block;
+}
+#main_content{
+ width: 700px;
+ background-color: #0c1821;
+ padding: 20px;
+ color: #52dee5;
+ display: inline-block;
+ vertical-align: top;
+}
+#subcontent_title{
+font-size: 23px;
+font-weight: 900;
+margin: 0px 10px 5px 0px;
+}
+#subcontent_body{
+  margin: 0px 10px 0px 0px;
+}
+#subcontent_body ul li{
+  padding-top: 10px;
+}
+span{
+  color: #7692ff;
+}
+#footer{
+ background-color: #5c6672;
+ margin-top: 15px;
+ padding: 20px 0px 20px 15px;
+}

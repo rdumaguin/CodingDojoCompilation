@@ -1,0 +1,10 @@
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\bin\Debug\netcoreapp2.0\Basic_13.deps.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\bin\Debug\netcoreapp2.0\Basic_13.runtimeconfig.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\bin\Debug\netcoreapp2.0\Basic_13.runtimeconfig.dev.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\bin\Debug\netcoreapp2.0\Basic_13.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\bin\Debug\netcoreapp2.0\Basic_13.pdb
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\obj\Debug\netcoreapp2.0\Basic_13.csproj.CoreCompileInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\obj\Debug\netcoreapp2.0\Basic_13.AssemblyInfoInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\obj\Debug\netcoreapp2.0\Basic_13.AssemblyInfo.cs
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\obj\Debug\netcoreapp2.0\Basic_13.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Basic_13\obj\Debug\netcoreapp2.0\Basic_13.pdb

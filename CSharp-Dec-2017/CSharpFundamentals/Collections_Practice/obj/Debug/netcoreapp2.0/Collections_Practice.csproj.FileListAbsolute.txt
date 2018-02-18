@@ -1,0 +1,10 @@
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\bin\Debug\netcoreapp2.0\Collections_Practice.deps.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\bin\Debug\netcoreapp2.0\Collections_Practice.runtimeconfig.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\bin\Debug\netcoreapp2.0\Collections_Practice.runtimeconfig.dev.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\bin\Debug\netcoreapp2.0\Collections_Practice.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\bin\Debug\netcoreapp2.0\Collections_Practice.pdb
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\obj\Debug\netcoreapp2.0\Collections_Practice.csproj.CoreCompileInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\obj\Debug\netcoreapp2.0\Collections_Practice.AssemblyInfoInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\obj\Debug\netcoreapp2.0\Collections_Practice.AssemblyInfo.cs
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\obj\Debug\netcoreapp2.0\Collections_Practice.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Collections_Practice\obj\Debug\netcoreapp2.0\Collections_Practice.pdb

@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- html, head, and body tags aren't required -->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title></title>
+    </head>
+    <body>
+
+        <h1>Dojodachi</h1>
+        <a href="/reset">Reset</a>
+        <hr>
+
+        <div class="center">
+            <ul>
+                <li class="attributes">Fullness @ViewBag.Dojodachi.Fullness</li>
+                <li class="attributes">Happiness @ViewBag.Dojodachi.Happiness</li>
+                <li class="attributes">Meals @ViewBag.Dojodachi.Meals</li>
+                <li class="attributes">Energy @ViewBag.Dojodachi.Energy</li>
+            </ul>
+        </div>
+        
+        <div class="subcontainer">
+            <!-- if button clicked -->
+            <p>@ViewBag.Result</p>
+            <p>@TempData["Reaction"]</p>
+        </div>
+        <div>
+            <p>Instructions:</p>
+            <ul>
+                <li>Feed: -1 Meal >> 75% chance of +5-10 Fullness</li>
+                <li>Play: -5 Energy >> 75% chance of +5-10 Happiness</li>
+                <li>Work: -5 Energy >> +1-3 Meals</li>
+                <li>Sleep: -5 Fullness & Happiness >> +15 Energy</li>
+                <li>Rules: Fullness or Happiness must not reach 0</li>
+            </ul>
+        </div>
+        <div class="center">
+            <ul>
+                @{
+                    if(ViewBag.GameStatus == "playing")
+                    {
+                        <li class="actions">
+                            <form action="/action" method="post">
+                                <!-- Passing 'value' to 'name' parameter of POST Method Action()-->
+                                <input type="hidden" value='feed' name="action"> 
+                                <button type="submit">Feed</button>
+                            </form>
+                        </li>
+                        <li class="actions">
+                            <form action="/action" method="post">
+                                <input type="hidden" value='play' name="action">
+                                <button type="submit">Play</button>
+                            </form>
+                        </li>
+                        <li class="actions">
+                            <form action="/action" method="post">
+                                <input type="hidden" value='work' name="action">
+                                <button type="submit">Work</button>
+                            </form>
+                        </li>
+                        <li class="actions">
+                            <form action="/action" method="post">
+                                <input type="hidden" value='sleep' name="action">
+                                <button type="submit">Sleep</button>
+                            </form>
+                        </li>
+                    }
+                    else if(ViewBag.GameStatus == "gameover")
+                    {
+                        <li><a href="/reset"><button type="button" name="reset">Restart?</button></a></li>
+                    }
+                }
+            </ul>
+        </div>
+
+    </body>
+</html>

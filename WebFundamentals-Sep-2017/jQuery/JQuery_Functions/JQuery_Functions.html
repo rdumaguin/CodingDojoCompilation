@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>JQuery Functions</title>
+      <link rel="stylesheet" type="text/css" href="./css/main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      "use strict";
+
+        $(document).ready(function(){
+          // console.log($())
+
+          $('button.click').click(function(){
+            alert("Oink!");
+          });
+
+          $('button.hide').click(function(){
+            $('.hide span, .show span').hide( "fast" );
+          });
+
+          $('button.show').click(function(){
+            $('.hide span, .show span').show( "slow" );
+          });
+
+          $('button.toggle').click(function(){
+            $('.toggle span').toggle();
+          });
+
+          $('button.slideUp').click(function(){
+            $('#ninja_functions').slideUp();
+          });
+
+          $('button.slideDown').click(function(){
+            $('#ninja_functions').slideDown();
+          });
+
+          $('button.fadeIn').click(function(){
+            $('.fadeIn span').fadeIn( 5000 );
+          });
+
+          $('button.fadeOut').click(function(){
+            $('.fadeOut span').fadeOut( 5000 );
+          });
+
+          $('button.addClass').click(function(){
+            $('.addClass p').addClass("blue");
+          });
+
+          $('button.before').click(function(){
+            $('.before p').before($('span.box'));
+          });
+
+          $('button.after').click(function(){
+            $('.after p').after($('span.box'));
+          });
+
+          $('button.append').click(function(){
+            $('.append p').append($('<strong>[ninja]</strong>'));
+          });
+
+          $('button.html').click(function(){
+            var getContents = $('.html p').html();
+            alert(getContents);
+          });
+
+          $('button.attr').click(function(){
+            $('.attr span').attr('class', 'red');
+          });
+
+          $('button.val').click(function(){
+            var inputVal = $('.val input').val();
+            alert(inputVal);
+          });
+
+          $('button.text').click(function(){
+            $('.text p').text("something else");
+          });
+
+          $('button.data').click(function(){
+            $('.data p').data("hat", "cat");
+            alert( $('.data p').data( "hat" ) );
+          });
+
+        }) // end of $(document).ready(function(){
+      </script>
+
+   </head>
+   <body>
+     <div id="wrapper">
+       <div class="function">
+         <button type="button" name="button" class="click">Click</button>
+         <div class="interaction click">
+           <h1>.click</h1>
+           <p>Click the button to hear what a fox says.</p>
+         </div>
+       </div>
+       <div class="function">
+         <button type="button" name="button" class="hide">Hide</button>
+         <div class="interaction hide">
+           <h1>.hide</h1>
+           <p>Click the button to quickly hide<span> all of the sheep</span>.</p>
+         </div>
+       </div>
+       <div class="function">
+         <button type="button" name="button" class="show">Show</button>
+         <div class="interaction show">
+           <h1>.show</h1>
+           <p>Click the button to slowly unhide<span> all of the sheep</span>.</p>
+         </div>
+       </div>
+       <div class="function">
+         <button type="button" name="button" class="toggle">Toggle</button>
+         <div class="interaction toggle">
+           <h1>.toggle</h1>
+           <p>Click the button to toggle <span>off</span><span style="display: none">on</span>.
+         </div>
+       </div>
+       <div class="function">
+         <button type="button" name="button" class="slideUp">SlideUp</button>
+         <div class="interaction slideUp">
+           <h1>.slideUp</h1>
+           <p>Click the button to hide most of the functions below.
+         </div>
+       </div>
+       <div class="function">
+         <button type="button" name="button" class="slideDown">SlideDown</button>
+         <div class="interaction slideDown">
+           <h1>.slideDown</h1>
+           <p>Click the button to reveal the hidden functions.
+         </div>
+       </div>
+       <div id="ninja_functions">
+         <div class="function">
+           <button type="button" name="button" class="fadeIn">FadeIn</button>
+           <div class="interaction fadeIn">
+             <h1>.fadeIn</h1>
+             <p>Click the button to fade in the rest<span style="display: none"> of this sentence slowly</span>.
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="fadeOut">FadeOut</button>
+           <div class="interaction fadeOut">
+             <h1>.fadeOut</h1>
+             <p>Click the button to fade out the rest<span> of this sentence slowly</span>.
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="addClass">AddClass</button>
+           <div class="interaction addClass">
+             <h1>.addClass</h1>
+             <p>Click the button to add class ".blue" to change this sentence's font color.
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="before">Before</button>
+           <div class="interaction before">
+             <h1>.before</h1>
+             <p>Click the button to move the box behind this sentence.</p><span class="box">[The box]</span>
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="after">After</button>
+           <div class="interaction after">
+             <h1>.after</h1>
+             <p>Click the button to move the box after this sentence.</p>
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="append">Append</button>
+           <div class="interaction append">
+             <h1>.append</h1>
+             <p>Click the button to add a bold ninja to the end of this sentence.</p>
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="html">HTML</button>
+           <div class="interaction html">
+             <h1>.html</h1>
+             <p>Click the button to copy this sentence into an alert.</p>
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="attr">Attr</button>
+           <div class="interaction attr">
+             <h1>.attr</h1>
+             <p>Click the button to change this <span class="blue">color's</span> attribute to red.</p>
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="val">Val</button>
+           <div class="interaction val">
+             <h1>.val</h1>
+             <p>Click the button to send the input box value to an alert.</p>
+             <input type="text" text="Type here">
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="text">Text</button>
+           <div class="interaction text">
+             <h1>.text</h1>
+             <p>Click the button to set the text contents to something else</p>
+           </div>
+         </div>
+         <div class="function">
+           <button type="button" name="button" class="data">Text</button>
+           <div class="interaction data">
+             <h1>.data</h1>
+             <p>Click the button to put something in the hat, and alert what it is.</p>
+           </div>
+         </div>
+       </div>
+    </div> <!-- end of wrapper -->
+   </body>
+</html>

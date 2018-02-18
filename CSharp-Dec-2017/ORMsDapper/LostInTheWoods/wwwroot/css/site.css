@@ -1,0 +1,33 @@
+/*Write all of your CSS here*/
+*{
+/* border: 1px dotted red; */
+}
+.container{
+background-color: ghostwhite;
+width: 100%;
+min-width: 600px;
+overflow: auto;
+padding: 0 3em 2em 3em;
+}
+table{
+text-align: left;
+border: 1px solid black;
+padding: 5px;
+margin: 10px auto;
+width: 100%;
+}
+th{
+background-color: rgb(174, 174, 174);
+}
+th, td{
+border: 1px solid black;  
+}
+a{
+text-decoration: underline;
+}
+.button{
+display: inline-block;
+box-shadow: 2px 2px 2px black;
+margin-bottom: 1em;
+float: right;
+}

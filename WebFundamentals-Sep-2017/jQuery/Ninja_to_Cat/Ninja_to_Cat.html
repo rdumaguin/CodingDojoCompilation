@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>JQuery Functions</title>
+      <link rel="stylesheet" type="text/css" href="./css/main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      "use strict";
+
+        $(document).ready(function(){
+          // console.log($())
+
+          $('img').click(function(){
+            var temp = $(this).attr('src') ;
+            // console.log(temp);
+            var getContents = $(this).attr('data-alt-src');
+            // console.log(getContents);
+            $(this).attr('src', getContents);
+            $(this).attr('data-alt-src', temp);
+          });
+
+        }) // end of $(document).ready(function(){
+      </script>
+
+   </head>
+   <body>
+     <div id="wrapper">
+       <div class="ninja">
+         <img src="./images/ninja0.png" alt="ninjacat0.png" data-alt-src="./images/cat0.png">
+         <img src="./images/ninja1.png" alt="ninjacat1.png" data-alt-src="./images/cat1.png">
+         <img src="./images/ninja2.png" alt="ninjacat2.png" data-alt-src="./images/cat2.png">
+         <img src="./images/ninja3.png" alt="ninjacat3.png" data-alt-src="./images/cat3.png">
+         <img src="./images/ninja4.png" alt="ninjacat4.png" data-alt-src="./images/cat4.png">
+       </div>
+    </div> <!-- end of wrapper -->
+    <!-- Create a jQuery puzzle using two images sliced into five parts. Using jQuery, make it so that when each image slice is clicked, it will change to a different picture. You may use your own pictures and crop them or you can just download the images provided here. -->
+   </body>
+</html>

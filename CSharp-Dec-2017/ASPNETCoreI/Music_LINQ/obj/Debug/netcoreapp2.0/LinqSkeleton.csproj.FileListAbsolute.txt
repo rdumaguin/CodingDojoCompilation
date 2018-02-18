@@ -1,0 +1,10 @@
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\bin\Debug\netcoreapp2.0\LinqSkeleton.deps.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\bin\Debug\netcoreapp2.0\LinqSkeleton.runtimeconfig.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\bin\Debug\netcoreapp2.0\LinqSkeleton.runtimeconfig.dev.json
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\bin\Debug\netcoreapp2.0\LinqSkeleton.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\bin\Debug\netcoreapp2.0\LinqSkeleton.pdb
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\obj\Debug\netcoreapp2.0\LinqSkeleton.csproj.CoreCompileInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\obj\Debug\netcoreapp2.0\LinqSkeleton.AssemblyInfoInputs.cache
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\obj\Debug\netcoreapp2.0\LinqSkeleton.AssemblyInfo.cs
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\obj\Debug\netcoreapp2.0\LinqSkeleton.dll
+C:\Users\Rom\Desktop\CD\Rommel_Dumaguin_CSharp-Dec-17\Music_LINQ\obj\Debug\netcoreapp2.0\LinqSkeleton.pdb

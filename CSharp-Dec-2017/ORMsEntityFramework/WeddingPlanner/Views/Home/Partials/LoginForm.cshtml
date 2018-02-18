@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    if(TempData["Error"] != null)
+    {
+        <p>@TempData["Error"]</p>
+    }
+}
+<form action="login" controller="Home" method="post">
+    <div class="form-group">
+        <label for="login_email">Email</label>
+        <input type="text" name="login_email" value="@ViewBag.Email" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="login_password">Password</label>
+        <input type="password" name="login_password" class="form-control">
+    </div>
+    <input type="submit" value="Submit" class="button">
+</form>
+
+<!-- <a href="/">Need to Register?</a> -->

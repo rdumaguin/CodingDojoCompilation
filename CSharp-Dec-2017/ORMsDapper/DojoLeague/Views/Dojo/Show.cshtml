@@ -1,0 +1,64 @@
+@{
+    ViewData["Title"] = "Show Page";
+}
+@model DojoLeague.Models.ShowDojo
+
+<h1>Dojo Name: @Model.Dojo.Name</h1>
+<h4>Dojo Location: @Model.Dojo.Location</h4>
+<h4>Information: @Model.Dojo.AdditionalInfo</h4>
+
+<h3>Current Members</h3>
+@{
+    if(Model.Dojo.Members.Count < 1)
+    {
+        <p>No ninja members found</p>
+    }
+    else
+    {
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Ninja</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var ninja in Model.Dojo.Members)
+                {
+                    <tr>
+                        <td><a href="/@ninja.NinjaId">@ninja.Name</a></td>
+                        <td><a href="/banish/@ninja.NinjaId/@Model.Dojo.DojoId">Banish!</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+<h3>Rogue Ninjas</h3>
+@{
+    if(Model.RogueNinjas.Count < 1)
+    {
+        <p>No rogue ninjas found</p>
+    }
+    else
+    {
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Ninja</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var ninja in Model.RogueNinjas)
+                {
+                    <tr>
+                        <td><a href="/@ninja.NinjaId">@ninja.Name</a></td>
+                        <td><a href="/recruit/@ninja.NinjaId/@Model.Dojo.DojoId">Recruit!</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}

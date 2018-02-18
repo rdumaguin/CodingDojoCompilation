@@ -1,0 +1,75 @@
+/*Write all of your CSS here*/
+.container{
+    background-color: lightgray;
+    width: 100%;
+    min-width: 1000px;
+    overflow: auto;
+    padding: 0 3em 2em 3em;
+}
+.post_message{
+text-align: right;
+}
+.post_message .button{
+background-color: #2c79e4;
+color: white;
+float: right;
+}
+.post_message textarea{
+width: 98%;
+height: 100px;
+display: inline;
+border: 2px solid darkgray;
+}
+.post_comment{
+text-align: right;
+}
+.post_comment .button{
+background-color: #009d0f;
+color: white;
+float: right;
+}
+.post_comment .title{
+padding-left: 56px;
+}
+.post_comment textarea{
+width: 94.75%;
+height: 75px;
+display: inline;
+border: 2px solid darkgray;
+}
+div.message h5{
+    text-align: left;
+}
+div.message p{
+text-align: justify;
+width: 100%;
+padding-left: 35px;
+}
+div.comment h5{
+text-align: left;
+padding-left: 55px;
+}
+div.comment p{
+text-align: justify;
+width: 100%;
+padding-left: 56px;
+}
+a{
+text-decoration: underline;
+}
+.button{
+display: inline-block;
+box-shadow: 2px 2px 2px black;
+margin-bottom: 1em;
+}
+.flash_error{
+color: red;
+}
+ul{
+list-style: none;
+padding: 0;
+text-align: left;
+}
+.title{
+    text-align: left;
+  }

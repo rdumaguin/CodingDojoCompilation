@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>If_You_Don't_Mind_Can_I_Have_the_Time</title>
+    <script type="text/javascript">
+      var HOUR = 8;
+      var MINUTE = 50;
+      var PERIOD = "AM";
+      function period(x){
+        console.log(x);
+        if (x == "AM") {
+          return "in the morning.";
+        }
+        else if (x == "PM") {
+          return "in the evening.";
+        }
+      }
+      if (MINUTE > 30) {
+        console.log("It's almost " + (HOUR + 1) + " " + period(PERIOD));
+      }
+      else {
+        console.log("It's just after " + HOUR + " " + period(PERIOD));
+      }
+
+      HOUR = 7;
+      MINUTE = 15;
+      PERIOD = "PM";
+      if (MINUTE > 30) {
+        console.log("It's almost " + (HOUR + 1) + " " + period(PERIOD));
+      }
+      else {
+        console.log("It's just after " + HOUR + " " + period(PERIOD));
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

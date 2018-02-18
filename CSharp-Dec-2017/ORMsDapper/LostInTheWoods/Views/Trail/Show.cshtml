@@ -1,0 +1,19 @@
+@{
+ViewData["Title"] = "TrailName";
+}
+
+<h1>@ViewBag.Trail.Name</h1>
+<a href="/">Go Home</a>
+
+<h3>Description:</h3>
+<p>@ViewBag.Trail.Description</p>
+
+<h3>Trail Length:</h3>
+<p>@ViewBag.Trail.Length.ToString("F1") Miles</p>
+
+<h3>Elevation Change:</h3>
+<p>@ViewBag.Trail.Elevation feet</p>
+
+<hr>
+<h5>Longitude: @ViewBag.Trail.Longitude° N</h5>
+<h5>Latitude: @ViewBag.Trail.Latitude° W</h5>

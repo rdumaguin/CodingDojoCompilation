@@ -1,0 +1,211 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: arial,sans-serif;
+ color: black;
+}
+#wrapper{
+  width: 970px;
+  height: 970px;
+  background-color: white;
+}
+#header img{
+  width: 75px;
+  position: absolute;
+}
+#header h1{
+  display: inline-block;
+  font-weight: normal;
+  font-size: 35px;
+  margin: 20px 0 2px 80px;
+}
+#header span{
+  color: darkblue;
+}
+#header h2{
+  font-weight: normal;
+  color: white;
+  background: #4f81ab; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#25669f,#4f81ab,#25669f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#25669f,#4f81ab,#25669f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#25669f,#4f81ab,#25669f); /* For Firefox 3.6 to 15 */
+  background-image: linear-gradient(#25669f,#4f81ab,#25669f);
+  vertical-align: middle;
+  padding: 10px;
+}
+#all_content{
+  background: #4f81ab; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#dadde0,#ffffff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#dadde0,#ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#dadde0,#ffffff); /* For Firefox 3.6 to 15 */
+  background-image: linear-gradient(#dadde0,#ffffff);
+  background-size: 970px 150px;
+  background-repeat: no-repeat;
+}
+#left_content{
+  width: 150px;
+  display: inline-block;
+}
+span.bold{
+  font-weight: bold;
+}
+span.red{
+  color: red;
+}
+span.blue{
+  color: #23659e;
+}
+span.lightblue{
+  color: #00bfdf;
+}
+#left_content h5{
+  padding: 20px 0 10px 3px;
+  font-size: 14px;
+}
+#left_content h6{
+  padding: 0 0 10px 3px;
+  font-size: 13px;
+}
+button.watch_a_video{
+  color: white;
+  padding: 5px 15px;
+  border-radius: 7px;
+  background-color: #23659e;
+  width: 150px;
+  font-size: 12px;
+}
+button.more_resources{
+  color: white;
+  padding: 5px 15px;
+  border-radius: 7px;
+  width: 150px;
+  background-color: orange;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+#learn_more_banner{
+  width: 150px;
+  height: 265px;
+  position: relative;
+  overflow:hidden;
+  padding-top: 20px;
+  border-top: 1px solid gray;
+}
+#learn_more_banner .ad_background{
+  background-image: url(../images/ad_background.png);
+  background-size: 300px;
+  height: 300px;
+}
+#learn_more_banner h3{
+  color: white;
+  position: relative;
+  font-weight: normal;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  top: 20px;
+}
+img.ninja{
+  width: 70px;
+  display: block;
+  margin: 15px auto 20px auto;
+}
+button.learn_more{
+  width: 135px;
+  height: 25px;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 7px;
+  z-index:1;
+  background-color: #3dc9df;
+  font-size: 12px;
+border-radius: 5px;
+  color: white;
+}
+button.learn_more span{
+  font-size: 7px;
+  color: white;
+  vertical-align: middle;
+}
+#main_content{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 35px;
+}
+.main_content_body{
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+#main_content img.house{
+  width: 15px;
+  display: inline-block;
+}
+#main_content img.phone{
+  width: 35px;
+  margin-left: 350px;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.dns{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 15px;
+  margin-right: 120px;
+}
+.dns span{
+  font-size: 12px;
+}
+.contact_info{
+  display: inline-block;
+  text-align: right;
+  padding-top: 1px;
+}
+.contact_info p{
+  font-size: 10px;
+}
+.main_content_body{
+  width: 750px;
+  display: block;
+}
+.main_content_body ul{
+  margin-left: 25px;
+  padding: 10px
+}
+.main_content_body ul li{
+  font-size: 13px;
+}
+.main_content_body img.client_server{
+  width: 230px;
+  display: block;
+  margin: 0 auto;
+}
+.main_content_body ol{
+  margin-left: 25px;
+  padding: 10px
+}
+.main_content_body ol li{
+  padding: 2px 0;
+  font-size: 13px
+}
+.big3{
+  border-left: 5px solid #0085e0;
+  border-top: 5px solid #0085e0;
+  border-right: 5px solid #0085e0;
+}
+.big3 img{
+  width: 100px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.big3_info{
+  display: inline-block;
+  width: 605px;
+  padding: 10px;
+}
+.big3_info p{
+  padding: 5px 0;
+  font-size: 13px;
+}

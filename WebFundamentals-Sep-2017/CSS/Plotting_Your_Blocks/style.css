@@ -1,0 +1,46 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 950px;
+ background-color: silver;
+ margin: 0px auto;
+ padding: 25px;
+}
+#header{
+ height: 150px;
+ background-color: green;
+ margin-bottom: 25px;
+}
+#navigation, #main_content{
+  display: inline-block;
+  vertical-align: top;
+}
+#navigation{
+ height: 300px;
+ width: 180px;
+ /*Changed from 200px; Is there a better option?*/
+ margin-right: 25px;
+ background-color: blue;
+
+}
+#main_content{
+ height: 400px;
+ width: 700px;
+ background-color: red;
+ padding: 20px;
+}
+.subcontents{
+ height: 200px;
+ width: 210px;
+ margin: 0px 10px 30px 0px;
+ background-color: yellow;
+ display: inline-block;
+}
+#advertisement{
+ height: 120px;
+ width: 660px;
+ background-color: purple;
+}
